@@ -1,0 +1,462 @@
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayman Anwar Khan | Mechanical Engineering Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              500: '#0284c7',
+              600: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .page-section { display: none; }
+    .page-section.active { display: block; }
+  </style>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-brand-500 selection:text-white">
+
+  <!-- TOP NAVIGATION BAR -->
+  <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#about" onclick="navigateTo('about')" class="text-xl font-bold tracking-tight text-white hover:text-brand-500 transition">
+          Ayman Anwar Khan<span class="text-brand-500">.</span>
+        </a>
+        
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex space-x-1 text-sm font-medium">
+          <a href="#about" onclick="navigateTo('about')" class="nav-link px-3 py-2 rounded-md transition text-slate-300 hover:text-white hover:bg-slate-800" id="nav-about">About</a>
+          <a href="#skills" onclick="navigateTo('skills')" class="nav-link px-3 py-2 rounded-md transition text-slate-300 hover:text-white hover:bg-slate-800" id="nav-skills">Skills</a>
+          <a href="#projects" onclick="navigateTo('projects')" class="nav-link px-3 py-2 rounded-md transition text-slate-300 hover:text-white hover:bg-slate-800" id="nav-projects">Projects</a>
+          <a href="#experience" onclick="navigateTo('experience')" class="nav-link px-3 py-2 rounded-md transition text-slate-300 hover:text-white hover:bg-slate-800" id="nav-experience">Experience</a>
+          <a href="#contact" onclick="navigateTo('contact')" class="nav-link px-3 py-2 rounded-md transition text-slate-300 hover:text-white hover:bg-slate-800" id="nav-contact">Contact</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-btn" type="button" class="p-2 rounded-md text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none">
+            <i class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-b border-slate-800 bg-slate-900 px-4 pt-2 pb-4 space-y-1">
+      <a href="#about" onclick="navigateTo('about')" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-white">About</a>
+      <a href="#skills" onclick="navigateTo('skills')" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-white">Skills</a>
+      <a href="#projects" onclick="navigateTo('projects')" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-white">Projects</a>
+      <a href="#experience" onclick="navigateTo('experience')" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-white">Experience</a>
+      <a href="#contact" onclick="navigateTo('contact')" class="block px-3 py-2 rounded-md text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-white">Contact</a>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT AREA CONTAINER -->
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex-grow w-full">
+
+    <!-- PAGE 1: ABOUT / HOME -->
+    <section id="page-about" class="page-section active animate-fade-in">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-8 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-brand-500/10 text-brand-500 border border-brand-500/20">
+            <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+            B.Sc. Mechanical Engineering Student
+          </div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
+            Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-cyan-400">Ayman Anwar Khan</span>
+          </h1>
+          <p class="text-lg text-slate-300 leading-relaxed">
+            Versatile and forward-thinking Mechanical Engineering student at the University of Alberta with strong interest in mechanical design, manufacturing, engineering systems, electro-technologies, and digital automation.
+          </p>
+          <div class="flex flex-wrap gap-4 pt-2">
+            <a href="#projects" onclick="navigateTo('projects')" class="px-6 py-3 rounded-lg bg-brand-500 hover:bg-brand-600 text-white font-medium transition shadow-lg shadow-brand-500/25 flex items-center gap-2">
+              <i class="fa-solid fa-laptop-code"></i> View Projects
+            </a>
+            <a href="#contact" onclick="navigateTo('contact')" class="px-6 py-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 font-medium transition flex items-center gap-2">
+              <i class="fa-solid fa-envelope"></i> Get In Touch
+            </a>
+          </div>
+        </div>
+        <div class="lg:col-span-4 flex justify-center">
+          <div class="w-full max-w-sm rounded-2xl bg-gradient-to-b from-slate-800 to-slate-900 border border-slate-800 p-6 shadow-xl">
+            <h3 class="text-lg font-bold text-white mb-4 border-b border-slate-800 pb-2 flex items-center gap-2">
+              <i class="fa-solid fa-address-card text-brand-500"></i> Quick Information
+            </h3>
+            <ul class="space-y-3 text-sm text-slate-300">
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-location-dot text-slate-400 w-5"></i>
+                <span>Edmonton / Calgary, AB</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-graduation-cap text-slate-400 w-5"></i>
+                <span>University of Alberta (2nd Year)</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-id-card text-slate-400 w-5"></i>
+                <span>Alberta Class 5 Driver's License</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-envelope text-slate-400 w-5"></i>
+                <a href="mailto:a4aymankhan@gmail.com" class="hover:text-brand-500 transition">a4aymankhan@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- EDUCATION & PROFESSIONAL ENGAGEMENT -->
+      <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-slate-800/50 border border-slate-800 rounded-xl p-6">
+          <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+            <i class="fa-solid fa-university text-brand-500"></i> Education
+          </h2>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between items-start">
+                <h3 class="font-semibold text-white">B.Sc. in Mechanical Engineering</h3>
+                <span class="text-xs text-slate-400 bg-slate-800 px-2 py-1 rounded">2025 - Present</span>
+              </div>
+              <p class="text-sm text-brand-500">University of Alberta | Edmonton, AB</p>
+              <p class="text-sm text-slate-400 mt-1">Currently in 2nd year studies.</p>
+            </div>
+            <hr class="border-slate-800">
+            <div>
+              <div class="flex justify-between items-start">
+                <h3 class="font-semibold text-white">High School Diploma</h3>
+                <span class="text-xs text-slate-400 bg-slate-800 px-2 py-1 rounded">2022 - 2025</span>
+              </div>
+              <p class="text-sm text-brand-500">Sir Winston Churchill High School | Calgary, AB</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-slate-800/50 border border-slate-800 rounded-xl p-6">
+          <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+            <i class="fa-solid fa-certificate text-brand-500"></i> Industry Engagement & Certifications
+          </h2>
+          <ul class="space-y-3 text-sm text-slate-300">
+            <li class="bg-slate-800/80 p-3 rounded-lg border border-slate-700/50">
+              <div class="font-semibold text-white">APEGA Work Readiness Program</div>
+              <p class="text-xs text-slate-400">Active Novice Participant - Leadership, Accountability & Technical Literacy</p>
+            </li>
+            <li class="bg-slate-800/80 p-3 rounded-lg border border-slate-700/50">
+              <div class="font-semibold text-white">MATLAB Onramp Course</div>
+              <p class="text-xs text-slate-400">MathWorks (Aug 2026) - Programming, Data Analysis & Numerical Computation</p>
+            </li>
+            <li class="bg-slate-800/80 p-3 rounded-lg border border-slate-700/50">
+              <div class="font-semibold text-white">Finite Element Analysis (FEA)</div>
+              <p class="text-xs text-slate-400">edX (In Progress) - Meshing, Boundary Conditions & Loading Simulations</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 2: SKILLS -->
+    <section id="page-skills" class="page-section">
+      <div class="space-y-6">
+        <div>
+          <h1 class="text-3xl font-extrabold text-white">Technical Skills & Competencies</h1>
+          <p class="text-slate-400 text-sm mt-1">Search or browse my technical toolkit across design, programming, and electro-technologies.</p>
+        </div>
+
+        <!-- Search Bar Filter -->
+        <div class="relative">
+          <i class="fa-solid fa-search absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+          <input type="text" id="skills-search" placeholder="Search skills (e.g. CAD, Python, Electronics)..." class="w-full bg-slate-800 border border-slate-700 rounded-xl pl-11 pr-4 py-3 text-slate-200 placeholder-slate-400 focus:outline-none focus:border-brand-500">
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="skills-container">
+          <!-- Programming Card -->
+          <div class="skill-card bg-slate-800/60 border border-slate-800 rounded-xl p-6">
+            <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-500 flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-3">Programming & Software</h3>
+            <ul class="space-y-2 text-sm text-slate-300">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500 text-xs"></i> Python</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500 text-xs"></i> Java</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500 text-xs"></i> MATLAB</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500 text-xs"></i> VEXcode / RobotC</li>
+            </ul>
+          </div>
+
+          <!-- 3D CAD Card -->
+          <div class="skill-card bg-slate-800/60 border border-slate-800 rounded-xl p-6">
+            <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-500 flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-cubes"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-3">3D CAD & Prototyping</h3>
+            <ul class="space-y-2 text-sm text-slate-300">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500 text-xs"></i> Autodesk Revit</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500 text-xs"></i> OnShape & SketchUp</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500 text-xs"></i> 3D Printing (FDM)</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500 text-xs"></i> ANSYS (FEA Exposure)</li>
+            </ul>
+          </div>
+
+          <!-- Hardware & Electronics Card -->
+          <div class="skill-card bg-slate-800/60 border border-slate-800 rounded-xl p-6">
+            <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-500 flex items-center justify-center text-xl mb-4">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-3">Hardware & Electronics</h3>
+            <ul class="space-y-2 text-sm text-slate-300">
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500 text-xs"></i> Microcontrollers (VEX)</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500 text-xs"></i> Circuit & PCB Soldering</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500 text-xs"></i> Digital Oscilloscopes</li>
+              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-500 text-xs"></i> Multimeters & Function Gen</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 3: PROJECTS -->
+    <section id="page-projects" class="page-section">
+      <div class="space-y-6">
+        <div>
+          <h1 class="text-3xl font-extrabold text-white">Technical & Engineering Projects</h1>
+          <p class="text-slate-400 text-sm mt-1">A selection of technical coursework, prototyping, and hardware systems.</p>
+        </div>
+
+        <!-- Category Filter Buttons -->
+        <div class="flex flex-wrap gap-2" id="project-filters">
+          <button onclick="filterProjects('all')" class="filter-btn active px-4 py-1.5 rounded-lg text-xs font-semibold bg-brand-500 text-white transition">All</button>
+          <button onclick="filterProjects('electro')" class="filter-btn px-4 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition">Electro-Tech</button>
+          <button onclick="filterProjects('hardware')" class="filter-btn px-4 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition">Hardware & CAD</button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Project 1 -->
+          <div class="project-card electro bg-slate-800/60 border border-slate-800 rounded-xl p-6 space-y-3">
+            <span class="text-xs font-bold text-brand-500 uppercase tracking-wider">Electro-Technologies</span>
+            <h3 class="text-xl font-bold text-white">Audio & Signal Hardware Fabrication</h3>
+            <p class="text-sm text-slate-300">Assembled and soldered custom functional hardware including dual channel amplifiers, speaker/siren systems, and solid-state strobe lights from electrical schematics.</p>
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="text-xs bg-slate-900 text-slate-300 px-2.5 py-1 rounded-md border border-slate-800">Circuit Soldering</span>
+              <span class="text-xs bg-slate-900 text-slate-300 px-2.5 py-1 rounded-md border border-slate-800">Hardware</span>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card electro bg-slate-800/60 border border-slate-800 rounded-xl p-6 space-y-3">
+            <span class="text-xs font-bold text-brand-500 uppercase tracking-wider">Robotics & Automation</span>
+            <h3 class="text-xl font-bold text-white">Microcontroller & Dynamic Sensor Control</h3>
+            <p class="text-sm text-slate-300">Programmed VEX Robotics systems in RobotC/VEXcode to manage dynamic sensors, execute autonomous driving routines, and log live operational metrics.</p>
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="text-xs bg-slate-900 text-slate-300 px-2.5 py-1 rounded-md border border-slate-800">VEXcode</span>
+              <span class="text-xs bg-slate-900 text-slate-300 px-2.5 py-1 rounded-md border border-slate-800">Sensors</span>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card hardware bg-slate-800/60 border border-slate-800 rounded-xl p-6 space-y-3">
+            <span class="text-xs font-bold text-brand-500 uppercase tracking-wider">PC Hardware</span>
+            <h3 class="text-xl font-bold text-white">Custom PC Architecture & Diagnostics</h3>
+            <p class="text-sm text-slate-300">Designed and assembled custom desktop computer systems, executing hardware diagnostic testing for thermals, airflow optimization, and liquid cooling systems.</p>
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="text-xs bg-slate-900 text-slate-300 px-2.5 py-1 rounded-md border border-slate-800">Thermals</span>
+              <span class="text-xs bg-slate-900 text-slate-300 px-2.5 py-1 rounded-md border border-slate-800">Diagnostics</span>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card hardware bg-slate-800/60 border border-slate-800 rounded-xl p-6 space-y-3">
+            <span class="text-xs font-bold text-brand-500 uppercase tracking-wider">CAD & Rapid Prototyping</span>
+            <h3 class="text-xl font-bold text-white">3D Prototyping & Electrical Assembly</h3>
+            <p class="text-sm text-slate-300">Developed custom CAD models for physical prototyping via FDM 3D printing. Explored basic residential electrical installation procedures following standard safety codes.</p>
+            <div class="flex flex-wrap gap-2 pt-2">
+              <span class="text-xs bg-slate-900 text-slate-300 px-2.5 py-1 rounded-md border border-slate-800">3D Printing</span>
+              <span class="text-xs bg-slate-900 text-slate-300 px-2.5 py-1 rounded-md border border-slate-800">CAD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 4: EXPERIENCE & LEADERSHIP -->
+    <section id="page-experience" class="page-section">
+      <div class="space-y-6">
+        <div>
+          <h1 class="text-3xl font-extrabold text-white">Experience & Community Leadership</h1>
+          <p class="text-slate-400 text-sm mt-1">Technical assistant roles and community engagement history.</p>
+        </div>
+
+        <div class="space-y-6">
+          <!-- Work Experience -->
+          <div class="bg-slate-800/50 border border-slate-800 rounded-xl p-6 space-y-2">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between">
+              <h3 class="text-lg font-bold text-white">Office Technical Assistant</h3>
+              <span class="text-xs text-brand-500 bg-brand-500/10 border border-brand-500/20 px-2.5 py-1 rounded-full w-fit">Part-Time | July 2025</span>
+            </div>
+            <p class="text-sm text-slate-400">AlfaGreen Projects and Services Inc.</p>
+            <p class="text-sm text-slate-300 pt-2">Provided technical support for hardware and software configuration, daily IT setup, and computer literacy support.</p>
+          </div>
+
+          <!-- Volunteering List -->
+          <div class="bg-slate-800/50 border border-slate-800 rounded-xl p-6 space-y-4">
+            <h3 class="text-lg font-bold text-white border-b border-slate-800 pb-2">Community Volunteering</h3>
+            
+            <div class="space-y-1">
+              <div class="flex justify-between text-sm">
+                <span class="font-semibold text-slate-200">Cultural Day & Canada Day Event Volunteer</span>
+                <span class="text-xs text-slate-400">Summer 2025</span>
+              </div>
+              <p class="text-xs text-slate-400">Operated event stalls and managed operational logistics for major community celebrations in Calgary, AB.</p>
+            </div>
+
+            <hr class="border-slate-800">
+
+            <div class="space-y-1">
+              <div class="flex justify-between text-sm">
+                <span class="font-semibold text-slate-200">Youth Central Volunteer</span>
+                <span class="text-xs text-slate-400">Summer 2024</span>
+              </div>
+              <p class="text-xs text-slate-400">Provided 1-on-1 technical assistance to seniors and assisted with equipment setup for Stampede Breakfast events.</p>
+            </div>
+
+            <hr class="border-slate-800">
+
+            <div class="space-y-1">
+              <div class="flex justify-between text-sm">
+                <span class="font-semibold text-slate-200">ICNA Calgary Logistics Volunteer</span>
+                <span class="text-xs text-slate-400">Summer 2024</span>
+              </div>
+              <p class="text-xs text-slate-400">Managed inventory and packaging operations for high-volume community food basket distributions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 5: CONTACT -->
+    <section id="page-contact" class="page-section">
+      <div class="max-w-2xl mx-auto space-y-6">
+        <div class="text-center">
+          <h1 class="text-3xl font-extrabold text-white">Get In Touch</h1>
+          <p class="text-slate-400 text-sm mt-1">Feel free to reach out for engineering opportunities, co-op inquiries, or technical projects.</p>
+        </div>
+
+        <form id="contact-form" onsubmit="handleFormSubmit(event)" class="bg-slate-800/60 border border-slate-800 rounded-xl p-6 space-y-4">
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+            <input type="text" required placeholder="John Doe" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-slate-200 focus:outline-none focus:border-brand-500">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+            <input type="email" required placeholder="john@example.com" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-slate-200 focus:outline-none focus:border-brand-500">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message</label>
+            <textarea rows="4" required placeholder="Hello Ayman, I'd like to connect regarding..." class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-2.5 text-slate-200 focus:outline-none focus:border-brand-500"></textarea>
+          </div>
+          <button type="submit" class="w-full py-3 bg-brand-500 hover:bg-brand-600 text-white font-medium rounded-lg transition shadow-lg shadow-brand-500/20">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800 bg-slate-900/50 py-6 text-center text-xs text-slate-500">
+    <div class="max-w-6xl mx-auto px-4">
+      <p>© 2026 Ayman Anwar Khan. Built for GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT FOR SPA ROUTING & INTERACTIVITY -->
+  <script>
+    // SPA Hashtag Router
+    function navigateTo(pageId) {
+      document.querySelectorAll('.page-section').forEach(section => {
+        section.classList.remove('active');
+      });
+      const targetSection = document.getElementById('page-' + pageId);
+      if (targetSection) {
+        targetSection.classList.add('active');
+      }
+
+      // Update Nav highlighting
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('bg-slate-800', 'text-white');
+        link.classList.add('text-slate-300');
+      });
+      const activeNav = document.getElementById('nav-' + pageId);
+      if (activeNav) {
+        activeNav.classList.add('bg-slate-800', 'text-white');
+      }
+
+      // Close mobile menu if open
+      document.getElementById('mobile-menu').classList.add('hidden');
+    }
+
+    // Handle hash change on load and URL change
+    window.addEventListener('hashchange', () => {
+      const hash = window.location.hash.replace('#', '') || 'about';
+      navigateTo(hash);
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const hash = window.location.hash.replace('#', '') || 'about';
+      navigateTo(hash);
+    });
+
+    // Mobile Menu Toggle
+    document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    // Skills Search Filter
+    document.getElementById('skills-search')?.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase();
+      document.querySelectorAll('.skill-card').forEach(card => {
+        const text = card.textContent.toLowerCase();
+        card.style.display = text.includes(query) ? 'block' : 'none';
+      });
+    });
+
+    // Project Filter Buttons
+    function filterProjects(category) {
+      document.querySelectorAll('#project-filters .filter-btn').forEach(btn => {
+        btn.classList.remove('bg-brand-500', 'text-white');
+        btn.classList.add('bg-slate-800', 'text-slate-300');
+      });
+      event.target.classList.remove('bg-slate-800', 'text-slate-300');
+      event.target.classList.add('bg-brand-500', 'text-white');
+
+      document.querySelectorAll('.project-card').forEach(card => {
+        if (category === 'all' || card.classList.contains(category)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Contact Form Handler
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      alert('Thank you! Your message has been received.');
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
